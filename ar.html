@@ -10,53 +10,20 @@
             height: 50vh;
             width: 50vw;
         }
-        
-  
-    #lazy-load-poster {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-image: url(https://d25jbgvg9kmxad.cloudfront.net/catalogue/xwkkgfyv7xs2c4ee/ar_desktop_953x400.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-        #button-load {
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
-    background-position: 6% 50%;
-    background-color: #000;
-    color: white;
-    cursor: pointer;
-    border-radius: 6px;
-    display: inline-block;
-    padding: 10px 18px 9px 40px;
-    font-weight: 500;
-    box-shadow: 0 0 8px rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,.25);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    z-index: 100;
-}
-        
-        #qr {top: 45%;
-    left: 83%;
-    transform: translate(-50%, -50%);
-    width: 20%;
-    mix-blend-mode: multiply;
-            position: absolute;
-}
+
+
     </style>
 </head>
 <body>
 
+<model-viewer id="model-viewer" src="hof.glb" ar=""  ar-modes="webxr scene-viewer quick-look fallback" ar-scale="auto" alt="Barbie FHY73 - Traumvilla Dreamhouse Adventures Puppenhaus mit 3 Etagen, 8 Zimmer, Pool mit Rutsche und Zubehör, ca. 116 cm hoch, mit Lichter und Geräuschen, Spielzeug ab 3 Jahren augmented reality view" ios-src="https://d25jbgvg9kmxad.cloudfront.net/catalogue/xwkkgfyv7xs2c4ee/assets/FHY73_BarbieDreamhouse.usdz" camera-controls="">
+
+</model-viewer>
+
 <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ar
               ar-modes="webxr scene-viewer quick-look fallback"
               ar-scale="auto" magic-leap camera-controls alt="A 3D model of an astronaut"
-              ios-src="https://mediacdn.loadbee.com/catalogue/dzru3wksbw5mvvkw/models/MXMaster3GraphiteWebAR.usdz"></model-viewer>
+              ios-src="scene6717a4tachn0e00k.usdz"></model-viewer>
 mit usdz und glb
 <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" id="lazy-load" reveal="interaction" ar
               ar-modes="webxr scene-viewer quick-look fallback"
@@ -80,15 +47,7 @@ nur mit usdz
               ios-src="https://mediacdn.loadbee.com/catalogue/dzru3wksbw5mvvkw/models/MXMaster3GraphiteWebAR.usdz"></model-viewer>
 
 final
-    
-    <model-viewer id="model-viewer" src="https://d25jbgvg9kmxad.cloudfront.net/catalogue/xwkkgfyv7xs2c4ee/Barbie_Dreamhouse.glb" ar="" poster="https://d25jbgvg9kmxad.cloudfront.net/catalogue/xwkkgfyv7xs2c4ee/ar_mobile_500x276.jpg" ar-modes="webxr scene-viewer quick-look fallback" ar-scale="auto" alt="Barbie FHY73 - Traumvilla Dreamhouse Adventures Puppenhaus mit 3 Etagen, 8 Zimmer, Pool mit Rutsche und Zubehör, ca. 116 cm hoch, mit Lichter und Geräuschen, Spielzeug ab 3 Jahren augmented reality view" ios-src="https://d25jbgvg9kmxad.cloudfront.net/catalogue/xwkkgfyv7xs2c4ee/assets/FHY73_BarbieDreamhouse.usdz" camera-controls=""></model-viewer>
-    mattel
 
-    <model-viewer id="model-viewer" src="https://mediacdn.loadbee.com/catalogue/xwkkgfyv7xs2c4ee/Barbie_Dreamhouse.glb" ar="" reveal="interaction" ar-modes="webxr scene-viewer quick-look fallback" ar-scale="auto" alt="Barbie FHY73 - Traumvilla Dreamhouse Adventures Puppenhaus mit 3 Etagen, 8 Zimmer, Pool mit Rutsche und Zubehör, ca. 116 cm hoch, mit Lichter und Geräuschen, Spielzeug ab 3 Jahren augmented reality view" ios-src="https://d25jbgvg9kmxad.cloudfront.net/catalogue/xwkkgfyv7xs2c4ee/assets/FHY73_BarbieDreamhouse.usdz" camera-controls="">
-    <div id="lazy-load-poster" slot="poster"></div>
-  <img slot="poster"  id="qr" src="https://d25jbgvg9kmxad.cloudfront.net/catalogue/xwkkgfyv7xs2c4ee/5343b21ad303bf1799629894deca13db.png" alt="QR Code">
-  <div id="button-load" slot="poster">Load 3D Model</div>
-    </model-viewer>
 
 </body>
 </html>
